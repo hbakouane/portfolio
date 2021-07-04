@@ -4,10 +4,9 @@
             app
             color="white"
             elevate-on-scroll
-            outlined
+            inverted-scroll
             height="100px"
             style="z-index: 25;"
-            scroll-threshold=""
         >
             <v-spacer></v-spacer>
             <div class="d-flex align-center">
@@ -34,7 +33,7 @@
                     <span class="mr-2">{{ item.item }}</span>
                 </v-btn>
             </div>
-            <v-btn href="/#contact" color="blue-grey darken-3" class="white--text rounded-0" elevation="0" large>Parlons de votre projet</v-btn>
+            <v-btn href="/#contact" color="blue-grey darken-3" class="white--text rounded-0" elevation="0" large>Let's Talk</v-btn>
             <v-btn icon class="hidden-lg-and-up" @click="drawer = !drawer">
                 <v-icon>mdi-menu</v-icon>
             </v-btn>
@@ -70,10 +69,10 @@ export default {
     data: () => ({
         items: [
             { item: 'Home', href: '#top', class: '' },
-            { item: 'About', href: '#about', class: '' },
-            { item: 'Nos spécialités', href: '#specialities', class: '' },
+            { item: 'About Me', href: '#about', class: '' },
+            { item: 'My Specialities', href: '#specialities', class: '' },
             { item: 'Portfolio', href: '#portfolio', class: '' },
-            { item: 'Contacter Nous', href: '#contact', class: '' }
+            { item: 'Contact Me', href: '#contact', class: '' }
         ],
         drawer: false,
         logo: 'https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png'
