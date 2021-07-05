@@ -96,7 +96,7 @@
               dense
               border="left"
               dismissible
-              >All the fields are required.</v-alert
+              >{{ errorMsg || 'All the fields are required.' }}</v-alert
             >
             <v-alert
               type="success"
@@ -171,6 +171,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: "Contact",
   props: ["social"],
@@ -184,24 +186,34 @@ export default {
       email: "",
       subject: "",
       message: "",
+      to: "hbakouane@gmail.com"
     },
     rules: {
       required: [(value) => !!value || "This field is required."],
     },
+    errorMsg: null
   }),
   methods: {
-    sendMessage() {
+    async sendMessage() {
       this.$refs.contactForm.validate();
       this.error = false;
       this.success = false;
       if (this.contactForm) {
         this.loading = true;
-        setTimeout(() => {
+        await axios.post('https://www.shop.lonicdev.com/api/v1/contact', this.contact)
+        .then(() => {
           this.loading = false;
           this.success = true;
-          this.danger = false;
+          this.error = false;
           this.$refs.contactForm.reset();
-        }, 1000);
+        })
+        .catch(err => {
+          console.log(err.response)
+          this.loading = false;
+          this.error = true;
+          this.success = false;
+          this.errorMsg = err.response.data.message
+        })
       }
     },
   },

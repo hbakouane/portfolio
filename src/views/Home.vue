@@ -2,7 +2,7 @@
   <div>
     <hero />
 
-    <about v-intersect="onIntersect" />
+    <about />
 
     <testimonials />
 

@@ -50,7 +50,12 @@
               <v-btn href="#" icon class="indigo--text darken-3" disabled>
                 <v-icon>mdi-github</v-icon>
               </v-btn>
-              <v-btn href="www.mataonme.com" icon class="indigo--text darken-3">
+              <v-btn
+                href="https://www.mataonme.com"
+                icon
+                class="indigo--text darken-3"
+                target="_blank"
+              >
                 <v-icon>mdi-link</v-icon>
               </v-btn>
             </v-card-actions>
@@ -169,9 +174,10 @@
                 <v-icon>mdi-github</v-icon>
               </v-btn>
               <v-btn
-                href="gymeo.lonicdev.com"
+                href="https://gymeo.lonicdev.com"
                 icon
                 class="indigo--text darken-3"
+                target="_blank"
               >
                 <v-icon>mdi-link</v-icon>
               </v-btn>
@@ -278,7 +284,12 @@
               >
                 <v-icon>mdi-github</v-icon>
               </v-btn>
-              <v-btn href="www.portfoi.com" icon class="indigo--text darken-3">
+              <v-btn
+                href="https://www.portfoi.com"
+                icon
+                class="indigo--text darken-3"
+                target="_blank"
+              >
                 <v-icon>mdi-link</v-icon>
               </v-btn>
             </v-card-actions>
@@ -351,6 +362,7 @@
                 href="https://www.shop.lonicdev.com/"
                 icon
                 class="indigo--text darken-3"
+                target="_blank"
               >
                 <v-icon>mdi-link</v-icon>
               </v-btn>
