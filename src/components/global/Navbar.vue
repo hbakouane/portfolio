@@ -70,7 +70,7 @@ export default {
         items: [
             { item: 'Home', href: '#top', class: '' },
             { item: 'About Me', href: '#about', class: '' },
-            { item: 'My Specialities', href: '#specialities', class: '' },
+            { item: 'Testmonials', href: '#testimonials', class: '' },
             { item: 'Portfolio', href: '#portfolio', class: '' },
             { item: 'Contact Me', href: '#contact', class: '' }
         ],

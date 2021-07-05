@@ -11,6 +11,7 @@ Vue.config.productionTip = false
 
 // Plugins
 import VueParticles from 'vue-particles'
+
 Vue.use(VueParticles, bootstrap)
 
 new Vue({

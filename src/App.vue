@@ -14,8 +14,14 @@ export default {
   name: 'App',
   components: { Navbar },
   data: () => ({
-    //
+    metaInfo: {
+      title: 'Haytam Bakouane\'s Portfolio - A Laravel/Vue developer located in Morocco, Fez.',
+      titleTemplate: '%s - Laravel / Vue developer'
+    }
   }),
+  created() {
+    document.head.querySelector('title').textContent = this.metaInfo.title
+  }
 };
 </script>
 

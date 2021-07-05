@@ -171,3 +171,15 @@ export default {
   name: "Portfolio"
 }
 </script>
+
+<style scoped>
+  @media screen and (max-width: 1100px) {
+      .v-btn.v-btn--has-bg, .v-btn.v-btn--outlined {
+          width: 100% !important;
+          max-width: 100% !important;
+          margin-left: 0% !important;
+          margin-right: 0% !important;
+          margin-top: 10px;
+      }
+  }
+</style>
