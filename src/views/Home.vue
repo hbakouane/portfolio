@@ -2,7 +2,7 @@
   <div>
     <hero />
 
-    <about />
+    <about v-intersect="onIntersect" />
 
     <testimonials />
 
@@ -54,7 +54,7 @@ export default {
       upwork: "https://www.upwork.com/freelancers/~0154e49d95a00ee989",
       github: "https://github.com/hbakouane",
     },
-  }),
+  })
 };
 </script>
 

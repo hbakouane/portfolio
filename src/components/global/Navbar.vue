@@ -11,10 +11,11 @@
             <v-spacer></v-spacer>
             <div class="d-flex align-center">
                 <v-img
-                alt="Vuetify Logo"
+                alt="Haytam Bakouane - Laravel / Vue developer located in Morocco."
+                title="Haytam Bakouane - Laravel / Vue developer located in Morocco."
                 class="shrink mr-2"
                 contain
-                :src="logo"
+                src="./../../assets/images/logo.png"
                 transition="scale-transition"
                 width="40"
                 />
@@ -33,7 +34,7 @@
                     <span class="mr-2">{{ item.item }}</span>
                 </v-btn>
             </div>
-            <v-btn href="/#contact" color="blue-grey darken-3" class="white--text rounded-0" elevation="0" large>Let's Talk</v-btn>
+            <v-btn href="/#contact" color="blue-grey darken-3" class="white--text rounded-0" elevation="0" large style="width: fit-content !important;">Let's Talk</v-btn>
             <v-btn icon class="hidden-lg-and-up" @click="drawer = !drawer">
                 <v-icon>mdi-menu</v-icon>
             </v-btn>
@@ -44,7 +45,7 @@
                     alt="Vuetify Logo"
                     class="shrink mr-2"
                     contain
-                    :src="logo"
+                    src="./../../assets/images/logo.png"
                     transition="scale-transition"
                     width="40"
                     />
@@ -74,8 +75,7 @@ export default {
             { item: 'Portfolio', href: '#portfolio', class: '' },
             { item: 'Contact Me', href: '#contact', class: '' }
         ],
-        drawer: false,
-        logo: 'https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png'
+        drawer: false
     })
 }
 </script>
